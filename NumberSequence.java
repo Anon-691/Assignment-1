@@ -36,12 +36,14 @@ public class NumberSequence {
     System.out.println("Enter last term of the series:");
     int lt=sc.nextInt();
 
-    int diff=0;
+    int diff=1;
     int res=1;
+     System.out.print(res);
     while(res<=lt){
-       System.out.print(res + ",");
+       System.out.print("," + res);
       res= res + diff;
       diff++;
     }
+    
   }
 }
