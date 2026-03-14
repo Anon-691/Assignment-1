@@ -10,7 +10,7 @@ int i=0;
 int totPop=0;
 
 System.out.println("Enter populations :");
-while(i<n){
+while(true){
 int num=sc.nextInt();
 
 if(num<0){
@@ -22,8 +22,8 @@ totPop+=num;
 }
 
 System.out.println("Your populations are:");
-for(int var:arr){
-    System.out.println(var);
+for(int j=0;j<i;j++){
+    System.out.println(arr[j]);
 }
 
 System.out.println("Total population =" + totPop);
@@ -33,8 +33,5 @@ if(i > 0){
             System.out.println("Population Average = " + avg );
             
 }
-  }
-}
-
   }
 }
